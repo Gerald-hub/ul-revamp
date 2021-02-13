@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | University Of Limpopo</title>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/atlantis.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+<a href="https://" class="btn btn-block btn-dark text-truncate rounded-0 py-2 d-none d-lg-block" style="z-index: 1000;" target="_blank">
+    <strong>SA COVID-19 INFORMATION CENTER</strong> CLICK HERE FOR MORE INFORMATION →
+</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <strong>University Of Limpopo</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                    <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <div class="dropdown-menu dropdown-menu-single">
+                        <a href="index.html" class="dropdown-item">Research</a>
+                        <a href="about.html" class="dropdown-item">TGSL</a>
+                        <a href="contact.html" class="dropdown-item">Library</a>
+                        <a href="contact.html" class="dropdown-item">Alumni</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="index.html" class="dropdown-item">Student Login</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Contact Us</a>
+                </li>
+
+            </ul>
+            <a class="navbar-btn btn btn-sm btn-primary d-none d-lg-inline-block ml-3" href="#">
+                APPLY NOW
+            </a>
+            <div class="d-lg-none text-center">
+                <a href="index.html" class="btn btn-block btn-sm btn-warning">APPLY NOW</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+    <section class="pad-60-why bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <span class="badge badge-soft-primary">
+                        #ULMyFuture
+                    </span>
+                    <h3 class="pad-5 mb-20">WHY CHOOSE US</h3>
+                </div>
+            </div>
+            <div class="row pad-5">
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="images/foculties/undraw_doctors_hwty.png" class="img-fluid img-center" style="height: 150px;" alt="Health science">
+                            </div>
+                            <h6 class="mb-3">HEALTH SCIENCES</h6>
+                            <a href="" class="btn btn-warning btn-icon rounded-pill">
+                                <span class="btn-inner--text">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="images/foculties/undraw_new_ideas_jdea.png" class="img-fluid img-center" style="height: 150px;" alt="Humanities">
+                            </div>
+                            <h6 class="mb-3">HUMANITIES</h6>
+                            <a href="#" class="btn btn-warning btn-icon rounded-pill">
+                                <span class="btn-inner--text">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="images/foculties/undraw_science_fqhl.png" class="img-fluid img-center" style="height: 150px;" alt="Science And Agriculture">
+                            </div>
+                            <h6 class="mb-3">SCIENCE & AGRI</h6>
+                            <a href="#" class="btn btn-warning btn-icon rounded-pill">
+                                <span class="btn-inner--text">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="images/foculties/undraw_judge_katerina_limpitsouni_ny1q.png" class="img-fluid img-center" style="height: 150px;" alt="Management And Law">
+                            </div>
+                            <h6 class="mb-3">MANAGEMENT & LAW</h6>
+                            <a href="#" class="btn btn-warning btn-icon rounded-pill">
+                                <span class="btn-inner--text">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pad-60-ann bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <span class="badge badge-soft-warning">
+                        #ULMyFuture
+                    </span>
+                    <h3 class="pad-5 mb-20" style="color: #ffffff;">ANNOUNCEMENTS</h3>
+                </div>
+            </div>
+
+            <div class="row pad-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="" class="img-fluid img-center" style="height: 150px;" alt="Announcements">
+                            </div>
+                            <h6 class="mb-2">Are you passionate about science? The search is on for the next science pop idol!</h6>
+                            <p class="text-muted mb-1">Join the FameLab team for a workshop and participate in the 2021 Northen Regional FameLab heat if you want to develop your science communication</p>
+                            <p class="mb-3"> <i class="fa fa-clock-o"></i> <strong><color style="color: #ffbe3d;">21-01-25 13:26</color></strong></p>
+                            <a href="#" class="btn btn-primary btn-icon rounded-pill">
+                                <span class="btn-inner--text">Full Event</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="" class="img-fluid img-center" style="height: 150px;" alt="Announcements">
+                            </div>
+                            <h6 class="mb-2">WTR-TIA Water Seed Fund call for innovations addressing South Africas water challenges</h6>
+                            <p class="text-muted mb-1">The Water Research Commission of South Africa and The Technology Innovation Agency are launching the Water Seed Fund for up to R200 000</p>
+                            <p class="mb-3"> <i class="fa fa-clock-o"></i> <strong><color style="color: #ffbe3d;">21-02-06 10:45</color></strong></p>
+                            <a href="#" class="btn btn-primary btn-icon rounded-pill">
+                                <span class="btn-inner--text">Full Event</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="" class="img-fluid img-center" style="height: 150px;" alt="Announcements">
+                            </div>
+                            <h6 class="mb-2">Applications for 2022 bursaries and post-doctoral fellowships DSI-NRF center of excellence</h6>
+                            <p class="text-muted mb-1">Each year DSI-NRF center of excellence in human development awards bursaries to high performing masters and doctoral students and post-doctoral</p>
+                            <p class="mb-3"> <i class="fa fa-clock-o"></i> <strong><color style="color: #ffbe3d;">21-02-04 12:00</color></strong></p>
+                            <a href="#" class="btn btn-primary btn-icon rounded-pill">
+                                <span class="btn-inner--text">Full Event</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pad-60-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <span class="badge badge-soft-primary">
+                        #ULMyFuture
+                    </span>
+                    <h3 class="pad-5 mb-20">NEWS UPDATES</h3>
+                </div>   
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                  <p>
+                    <a class="btn btn-primary rounded-pill mb-3" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      ULNews Updates
+                    </a>
+                    <button class="btn btn-outline-primary rounded-pill mb-3" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Research News
+                    </button>
+                    <button class="btn btn-outline-primary rounded-pill mb-3" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      NSFAS News
+                    </button>
+                  </p>
+                </div>
+                <div class="container collapse" id="collapseExample">
+                        <div class="row">
+                             <div class="col-lg-6">
+                                 <div class="card">
+                                     <div class="card-body pb-5">
+                                        <h6 class="mb-2">Covid-19 virtual lecture unpacks Limpopo vaccination plan</h6>
+                                        <p class="mb-3"> <i class="fa fa-clock-o"></i> <strong><color style="color: #ffbe3d;">21-02-07 09:45</color></strong></p>
+                                        <p class="text-muted mb-5">Vaccination is just a part of primary prevention and does not entirely stamp the threat of Covid-19 pandemic. 
+                                        This warning was issued by the Limpopo MEC, Dr Phophi Ramathuba during a virtual public lecture organised by the University Of Limpopo (UL)
+                                        Transitional Student Representative Council (TSRC)
+                                        </p>
+                                        <a href="#" class="btn btn-outline-warning btn-icon rounded-pill">
+                                            <span class="btn-inner--text">Continue Reading</span>
+                                        </a>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body pb-5">
+                                       <h6 class="mb-2">New teaching, learning journal receives accreditation</h6>
+                                       <p class="mb-3"> <i class="fa fa-clock-o"></i> <strong><color style="color: #ffbe3d;">21-02-06 15:20</color></strong></p>
+                                       <p class="text-muted mb-5">The Department of Higher Education, Science and Innovation has accredited the University Of Limpopo (UL) new journal
+                                       that seeks to embrace a new generation of teaching and learning scholars through the promotion of primary research by new and established researchers
+                                       titled <strong>African Perspectives Of Research In Teaching</strong>
+                                       </p>
+                                       <a href="#" class="btn btn-outline-warning btn-icon rounded-pill">
+                                        <span class="btn-inner--text">Continue Reading</span>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                     </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pad-60-our">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <span class="badge badge-soft-primary">
+                        #ULMyFuture
+                    </span>
+                    <h3 class="pad-5 mb-3">OUR PUBLICATIONS</h3>
+                    <h6 class="text-muted mb-5">Here you will find, our press releases, student magazines, alumni magazines, annual reports and many more publications.</h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="images/foculties/undraw_reading_list_4boi.png" class="img-fluid img-center" style="height: 150px;" alt="Publications Image">
+                            </div>
+                            <div class="overlay">
+                            <h6 class="mb-3 mt-8" style="color: #ffffff;">STUDENT MAGAZINE</h6>
+                            <a href="#" class="btn btn-warning btn-icon rounded-pill">
+                                <span class="btn-inner--text">View</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="images/foculties/undraw_Notebook_tlkl.png" class="img-fluid img-center" style="height: 150px;" alt="Publications Image">
+                            </div>
+                            <div class="overlay">
+                            <h6 class="mb-3 mt-8" style="color: #ffffff;">THE DAWN</h6>
+                            <a href="#" class="btn btn-warning btn-icon rounded-pill">
+                                <span class="btn-inner--text">View</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="images/foculties/undraw_candidate_ubwv.png" class="img-fluid img-center" style="height: 150px;" alt="Publications Image">
+                            </div>
+                            <div class="overlay">
+                            <h6 class="mb-3 mt-8" style="color: #ffffff;">ALUMNI MAGAZINE</h6>
+                            <a href="#" class="btn btn-warning btn-icon rounded-pill">
+                                <span class="btn-inner--text">View</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="images/foculties/undraw_conference_uo36.png" class="img-fluid img-center" style="height: 150px;" alt="Publications Image">
+                            </div>
+                            <div class="overlay">
+                            <h6 class="mb-3 mt-8" style="color: #ffffff;">UL WITNESS</h6>
+                            <a href="#" class="btn btn-warning btn-icon rounded-pill">
+                                <span class="btn-inner--text">View</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col-md-12">
+                    <a href="#" class="btn btn-warning btn-icon rounded-pill">
+                        <span class="btn-inner--text">View More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pad-60-call bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <span class="badge badge-soft-warning">
+                        #ULMyFuture
+                    </span>
+                    <h3 class="pad-5" style="color: #ffffff;">WHATS HAPPENING?</h3>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <img src="images/foculties/undraw_Hiring_re_yk5n.svg" class="img-fluid img-center mb-2" style="height: 150px;" alt="" srcset="">
+                    <h6 class="mb-2" style="color:#ffffff">2021 Free Online Applications</h6>
+                    <h6 class="mb-2" style="color:#ffffff">2021 Postgraduate Applications</h6>
+                    <h6 class="mb-2" style="color:#ffffff">COVID-19 Corona Virus South African Portal</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pad-60-footer bg-dark">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                   <h6 class="heading mb-3">QUICK LINKS</h6>
+                   <ul class="list-unstyled">
+                       <li><a class="nav-link" href="http://">About UL</a></li>
+                       <li><a class="nav-link" href="http://">General Calendar</a></li>
+                       <li><a class="nav-link" href="http://">Vacancies & Tenders</a></li>
+                       <li><a class="nav-link" href="http://">International Affairs</a></li>
+                       <li><a class="nav-link" href="http://">Reakgona Disability Center</a></li>
+                       <li><a class="nav-link" href="http://">Student Counselling Development</a></li>
+                       <li><a class="nav-link" href="http://">Center For Academic Excellence</a></li>
+                       <li><a class="nav-link" href="http://">UL Trust</a></li>
+                   </ul>
+               </div>
+               <div class="col-md-4">
+                   <h6 class="mb-3">STUDENTS</h6>
+                   <ul class="list-unstyled">
+                       <li><a class="nav-link" href="http://">Study@UL</a></li>
+                       <li><a class="nav-link" href="http://">Student Affairs</a></li>
+                       <li><a class="nav-link" href="http://">Financial Support</a></li>
+                       <li><a class="nav-link" href="http://">Undergrad Prospectus</a></li>
+                       <li><a class="nav-link" href="http://">Postgrad Prospectus</a></li>
+                       <li><a class="nav-link" href="http://">Download a form</a></li>
+                       <li><a class="nav-link" href="http://">Student fees</a></li>
+                       <li><a class="nav-link" href="http://">Libraries</a></li>
+                </ul>
+               </div>
+               <div class="col-md-4">
+                   <h6 class="mb-3">STAFF</h6>
+                   <ul class="list-unstyled">
+                    <li><a class="nav-link" href="http://">Internet</a></li>
+                    <li><a class="nav-link" href="http://">Staff Email</a></li>
+                    <li><a class="nav-link" href="http://">ICT Support</a></li>
+                    <li><a class="nav-link" href="http://">Supply Chain Management</a></li>
+                   </ul>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h6 class="mb-3">SOCIAL MEDIA</h6>
+                    <ul class="nav mt-4">
+                        <li><a class="nav-link" href="http://">Rado Turff</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-0" href="https://" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-6">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                            &copy; 2021 <a href="https://" class="font-weight-bold" target="_blank">Gerald Mutswi</a>. All rights reserved
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    NFSAS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    FUNZA-LUSHAKA
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="js/feather-icons/dist/feather.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+</body>
+</html>
